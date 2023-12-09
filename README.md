@@ -1,36 +1,34 @@
 # 🚲 Bikesharing Data Analysis and Dashboard
-
 Dataset by: Capital Bikeshare
 
 ## 📓 Data Analysis with Jupyter Notebook
+⚠️ See the detail of analysis and visualization on the [notebook](https://github.com/pratwib/bikesharing-data-analysis/blob/main/notebook.ipynb) 
 
-⚠️ See the detail of analysis and visualization on the [notebook](https://github.com/fikrionii/Dicoding-Bike-Sharing/blob/main/notebook-bikeshare-analysis.ipynb) 
+### Defining Business Question
+1. How is the number comparison between casual and registered user types?
+2. During which season do users of bike-sharing services reach their peak?
+3. How has the bike-sharing user trend been in the last 2 years?
+4. What is the usage pattern of bike-sharing services based on day of the week?
+5. Does weather affect the usage of bike-sharing services?
+6. Is there a correlation between temperature conditions and the number of users of bike-sharing services?
 
-### Defining Question
-1. How is the trend in the number of bike-sharing rides in recent years?
-2. What is the usage pattern of bike-sharing rides based on time of day?
-3. What season has the highest bike-sharing rides?
-4. What is the usage pattern of bike-sharing rides based on day of the week?
-5. Are there any correlations between temperatures that indicate conditions when bike-sharing rides are high?
-6. Does weather affect bikeshare usage?
+### Insights and Conclusions
+1. The number of `registered` bike-sharing users, totaling 2.6 million, is **notably higher** compared to `casual` users, which amount to 600,000. This indicates a substantial difference, with `registered` users being approximately 4x more numerous than `casual` users.
 
-### Insights and Findings
-1. The number of bikeshare rides in 2012 was higher than in 2011. Both years showed the same trend and seasonality, with the number of rides increasing in the middle of the year and decreasing at the beginning and end of the year.
+2. The bike-sharing service **reaches its peak during fall** `season`, with 1 million users. Summer and winter closely follow, while the usage is comparatively lower in spring `season`, with around 470,000 users. Interestingly, when examining user types, there is no notable difference in the seasonal patterns, as all seasons demonstrate a similar total user count trend.
 
-2. For registered users, the number of rides peaked at 8:00 AM and 5:00 PM, suggesting that they may have used the bikes to commute to work. For casual users, the number of rides started to increase during the day and decreased during the night.
+3. In the last 2 years (2011-2012), there was an **overall growth** in the number of bike-sharing users. This increase was particularly pronounced among `registered` users. The annual trend for both user types consistently involves a low point in Q1, a peak in Q3, and a decrease in Q4. Significantly, `registered` users outperformed casual users in terms of quantity, showcasing a substantial increase for both user categories.
 
-3. Bikeshare rides were highest during the summer season and lowest during the winter season.
+4. The usage pattern of bike-sharing services based on the day of the week reveals a **consistent overall value around 400,000** users daily. However, a closer look by user types shows that `registered` users tend to be **higher on weekdays**, while `casual` users show **higher usage on weekends**. The trend aligns with the distinction observed in the visualization of bike-sharing users on working days, where the **number in total significantly increases** to 2.3 million. On the contrary, during holidays, there is a **drastic decrease** in bike-sharing users, reaching only 78,000.
 
-4. For registered users, the number of rides was higher during weekdays. This is consistent with the findings in question 2, suggesting that registered users likely used the bikes to commute to work. For casual users, the number of rides was higher on weekends than on weekdays, indicating that they used the bikes for leisure activities on weekends.
+5. The barplot analysis indicates that weather has a **significant impact** on the usage og bike-sharing services. Approximately 3/4 of users, totalling 2.3 million, prefer biking in clear `weather`. Interestingly, during heavy rain, there are no bike-sharing users at all, suggesting a notable influence of `weather` conditions on the choice to use bike-sharing services.
 
-5. Yes, there is a moderate correlation between temperature and the number of bikeshare rides. The number of rides is lowest at colder temperatures, which occur during the winter, and starts to increase as the temperature increases, which happens in the summer. However, there is a "sweet spot" or temperature range when the number of rides is highest, which is between 20°C and 30°C. This temperature range typically occurs during the summer and fall seasons. On days with these temperature conditions, we can expect the number of bikeshare rides to be high.
+6. The observations from the heatmap and scatterplot suggest a correlation between temperature conditions and `count` of bike-sharing users. There is a **positive moderate correlation**, around 0.6 points, with both `temp` and `atemp`, indicating that `count` of bike-sharing users **tends to increase** as temperature rises. Additionally, there is a **slight negative correlation**, about -0.1 point for `hum` and -0.23 points for `windspeed`, implying that as humidity and wind speed increase, there is a **small decrease** in `count` of bike-sharing users.
 
-6. Yes, the number of rides is significantly higher during clear weather than during more extreme weather conditions.
+##  📟 Dashboard with Streamlit Cloud
 
-## 📊 Dashboard with Streamlit
 ### Streamlit Cloud
-
-🚧 View the dashboard on streamlit could directly on this link: https://capital-bikeshare-alfikri.streamlit.app/ 🚧
+⚠️ View the dashboard directly on this link: https://capital-bikeshare-alfikri.streamlit.app/
 
 The dashboard shows the count of total rides across the year and season. It also shows the difference casual riders and registered riders use of the bikesharing service, based on hour and day of the week.
 
