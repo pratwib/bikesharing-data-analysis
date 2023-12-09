@@ -15,7 +15,7 @@ st.set_page_config(
 
 # Load dataset
 
-df = pd.read_csv("cleaned_day.csv")
+df = pd.read_csv("dashboard\cleaned_day.csv")
 df["dateday"] = pd.to_datetime(df["dateday"])
 
 # Create functions
