@@ -138,7 +138,9 @@ min_date = df["dateday"].min()
 max_date = df["dateday"].max()
 
 with st.sidebar:
-    st.image("dashboard/logo_cb.png")
+    st.image(
+        "https://github.com/pratwib/bikesharing-data-analysis/blob/main/dashboard/logo_cb.png?raw=true"
+    )
 
     start_date, end_date = st.date_input(
         label="Select Date:",
