@@ -138,7 +138,7 @@ min_date = df["dateday"].min()
 max_date = df["dateday"].max()
 
 with st.sidebar:
-    st.image("logo_cb.png")
+    st.image("dashboard/logo_cb.png")
 
     start_date, end_date = st.date_input(
         label="Select Date:",
